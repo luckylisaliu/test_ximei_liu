@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ContactList</string>
+    <string name="title_activity_contact">Contacts</string>
+    <string name="sort_by_ascend">Sort By A-Z</string>
+    <string name="sort_by_descend">Sort By Z-A</string>
+    <string name="progress_loading">Loading Contacts...</string>
+</resources>
