@@ -8,7 +8,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.ximeiliu.contactlist.R;
-import com.example.ximeiliu.contactlist.model.ItemInfo;
+import com.example.ximeiliu.contactlist.model.DetailInfo;
 import com.example.ximeiliu.contactlist.other.ContactDetailAdapter;
 
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ContactDetailActivity extends AppCompatActivity {
-    private List<ItemInfo> inforList;
+    private List<DetailInfo> inforList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,11 +46,11 @@ public class ContactDetailActivity extends AppCompatActivity {
     private void buildInfoList(Intent intent) {
         inforList = new ArrayList<>();
 
-        inforList.add(new ItemInfo(intent.getStringExtra("USERNAME"), "USERNAME"));
-        inforList.add(new ItemInfo(intent.getStringExtra("PHONE"), "PHONE"));
-        inforList.add(new ItemInfo(intent.getStringExtra("ADDRESS"), "ADDRESS"));
-        inforList.add(new ItemInfo(intent.getStringExtra("WEBSITE"), "WEBSITE"));
-        inforList.add(new ItemInfo(intent.getStringExtra("COMPANY"), "COMPANY"));
+        inforList.add(new DetailInfo(intent.getStringExtra("USERNAME"), "USERNAME"));
+        inforList.add(new DetailInfo(intent.getStringExtra("PHONE"), "PHONE"));
+        inforList.add(new DetailInfo(intent.getStringExtra("ADDRESS"), "ADDRESS"));
+        inforList.add(new DetailInfo(intent.getStringExtra("WEBSITE"), "WEBSITE"));
+        inforList.add(new DetailInfo(intent.getStringExtra("COMPANY"), "COMPANY"));
 
     }
 

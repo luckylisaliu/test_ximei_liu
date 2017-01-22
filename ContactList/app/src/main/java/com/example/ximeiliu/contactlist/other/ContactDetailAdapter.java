@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.ximeiliu.contactlist.R;
-import com.example.ximeiliu.contactlist.model.ItemInfo;
+import com.example.ximeiliu.contactlist.model.DetailInfo;
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ import java.util.List;
 
 public class ContactDetailAdapter extends RecyclerView.Adapter<ContactDetailAdapter.ContactDetailViewHolder> {
     //Store fields for each contact
-    private List<ItemInfo> contactFields;
+    private List<DetailInfo> contactFields;
 
     class ContactDetailViewHolder extends RecyclerView.ViewHolder {
         TextView contactInfoValueView;
@@ -32,7 +32,7 @@ public class ContactDetailAdapter extends RecyclerView.Adapter<ContactDetailAdap
         }
     }
 
-    public ContactDetailAdapter(List<ItemInfo> contactFields, Context context) {
+    public ContactDetailAdapter(List<DetailInfo> contactFields, Context context) {
         this.contactFields = contactFields;
     }
 

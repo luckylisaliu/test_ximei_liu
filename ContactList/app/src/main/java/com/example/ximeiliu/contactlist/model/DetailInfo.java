@@ -4,11 +4,11 @@ package com.example.ximeiliu.contactlist.model;
  * Created by ximeiliu on 22/01/17.
  */
 
-public class ItemInfo {
+public class DetailInfo {
     private String item;
     private String itemValue;
 
-    public ItemInfo(String item, String itemValue) {
+    public DetailInfo(String item, String itemValue) {
         this.item = item;
         this.itemValue = itemValue;
     }
@@ -23,7 +23,7 @@ public class ItemInfo {
 
     @Override
     public String toString() {
-        return "ItemInfo{" +
+        return "DetailInfo{" +
                 "item='" + item + '\'' +
                 ", itemValue='" + itemValue + '\'' +
                 '}';

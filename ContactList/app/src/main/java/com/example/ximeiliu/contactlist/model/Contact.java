@@ -57,10 +57,10 @@ public class Contact implements Comparable<Contact> {
         return userName;
     }
 
-
     public String getEmail() {
         return email;
     }
+
 
     public Address getAddress() {
         return address;
@@ -78,105 +78,13 @@ public class Contact implements Comparable<Contact> {
         return company;
     }
 
+
     /*
-    *implement ascending sort based to contact name
+     *implement ascending sort based to contact name
      */
     @Override
     public int compareTo(@NonNull Contact o) {
         return this.getName().compareTo(o.getName());
-    }
-
-     public class Address {
-        @SerializedName("street")
-        private String street;
-        @SerializedName("suite")
-        private String suite;
-        @SerializedName("city")
-        private String city;
-        @SerializedName("zipcode")
-        private String zipcode;
-        @SerializedName("geo")
-        private Geo geo;
-
-         class Geo {
-            @SerializedName("lat")
-            private String lat;
-            @SerializedName("lng")
-            private String lng;
-
-             Geo(String lat, String lng) {
-                this.lat = lat;
-                this.lng = lng;
-            }
-        }
-
-         Address(String street, String suite, String city, String zipcode, Geo geo) {
-            this.street = street;
-            this.suite = suite;
-            this.city = city;
-            this.zipcode = zipcode;
-            this.geo = geo;
-        }
-
-         String getStreet() {
-            return street;
-        }
-
-         String getSuite() {
-            return suite;
-        }
-
-         String getCity() {
-            return city;
-        }
-
-         String getZipcode() {
-            return zipcode;
-        }
-
-        public String getCompleteAddress() {
-            return this.getSuite() + "," +
-                    this.getStreet() + "," + "\n" +
-                    this.getCity() + "," +
-                    this.getZipcode();
-        }
-    }
-
-     public class Company {
-        @SerializedName("name")
-        private String name;
-        @SerializedName("catchPhrase")
-        private String catchPhrase;
-        @SerializedName("bs")
-        private String bs;
-
-        public Company(String name, String catchPhrase, String bs) {
-            this.name = name;
-            this.catchPhrase = catchPhrase;
-            this.bs = bs;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-         String getCatchPhrase() {
-            return catchPhrase;
-        }
-
-         String getBs() {
-            return bs;
-        }
-
-        public String getCompanyName() {
-            return this.getName() + "\n" +
-                    this.getCatchPhrase() + "\n" +
-                    this.getBs();
-        }
     }
 
 
