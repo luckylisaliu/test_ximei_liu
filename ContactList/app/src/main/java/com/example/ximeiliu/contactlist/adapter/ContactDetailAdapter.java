@@ -1,4 +1,4 @@
-package com.example.ximeiliu.contactlist.other;
+package com.example.ximeiliu.contactlist.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

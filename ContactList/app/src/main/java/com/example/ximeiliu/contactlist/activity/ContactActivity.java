@@ -19,7 +19,7 @@ import com.example.ximeiliu.contactlist.model.Contact;
 import com.example.ximeiliu.contactlist.other.RecyclerItemClickListner;
 import com.example.ximeiliu.contactlist.other.RetroClient;
 import com.example.ximeiliu.contactlist.other.ApiService;
-import com.example.ximeiliu.contactlist.other.ContactsAdapter;
+import com.example.ximeiliu.contactlist.adapter.ContactsAdapter;
 
 import java.util.Collections;
 import java.util.List;

@@ -9,7 +9,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.example.ximeiliu.contactlist.R;
 import com.example.ximeiliu.contactlist.model.DetailInfo;
-import com.example.ximeiliu.contactlist.other.ContactDetailAdapter;
+import com.example.ximeiliu.contactlist.adapter.ContactDetailAdapter;
 
 import java.util.ArrayList;
 
